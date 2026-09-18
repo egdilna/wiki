@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "projectName": "EG",
   "created": "2026-06-02T14:49:12.239Z",
-  "modified": "2026-08-27T13:33:42.308Z",
+  "modified": "2026-09-18T13:13:55.556Z",
   "settings": {
     "theme": "",
     "skinparam": "",
@@ -19,13 +19,15 @@
       "type": "component",
       "folderId": null,
       "created": "2026-06-09T14:23:07.172Z",
-      "modified": "2026-08-03T08:49:04.394Z",
+      "modified": "2026-09-18T13:13:55.556Z",
       "settings": {
         "theme": "",
         "skinparam": "",
         "header": "",
         "footer": "",
-        "title": ""
+        "title": "",
+        "caption": "",
+        "layoutDirection": "left-right"
       },
       "model": {
         "components": [
