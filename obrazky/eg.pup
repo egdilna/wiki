@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "projectName": "EG",
   "created": "2026-06-02T14:49:12.239Z",
-  "modified": "2026-10-26T20:49:57.523Z",
+  "modified": "2026-10-26T20:55:44.859Z",
   "settings": {
     "theme": "",
     "skinparam": "",
@@ -8282,6 +8282,245 @@
       "done": {},
       "versions": [],
       "status": "done"
+    },
+    {
+      "id": "dg_14fk93rj4r",
+      "name": "Průběh dokumentu ESSL",
+      "type": "sequence",
+      "folderId": null,
+      "created": "2026-10-26T20:55:44.859Z",
+      "modified": "2026-10-26T20:55:44.859Z",
+      "settings": {
+        "theme": "",
+        "skinparam": "",
+        "header": "",
+        "footer": "",
+        "title": ""
+      },
+      "model": {
+        "participants": [
+          {
+            "id": "pa_e9l82ahvoy",
+            "type": "participant",
+            "alias": "Podatelna",
+            "name": "Podatelna"
+          },
+          {
+            "id": "pa_wx4a2ssvoy",
+            "type": "participant",
+            "alias": "Evidence",
+            "name": "Evidence"
+          },
+          {
+            "id": "pa_q4qg2x2voy",
+            "type": "participant",
+            "alias": "Spisovna",
+            "name": "Spisovna"
+          },
+          {
+            "id": "pa_gw27iv3voy",
+            "type": "participant",
+            "alias": "Podpisovkniha",
+            "name": "Podpisová kniha"
+          },
+          {
+            "id": "pa_zi7gridvoy",
+            "type": "participant",
+            "alias": "Skartace",
+            "name": "Skartace"
+          }
+        ],
+        "children": [
+          {
+            "id": "gp_rmb5ncjvoy",
+            "type": "group",
+            "groupType": "par",
+            "label": "",
+            "branches": [
+              {
+                "id": "br_tdsgyk9voy",
+                "label": "ticipant Výpravna",
+                "children": [
+                  {
+                    "id": "dv_h7q3ukmvoy",
+                    "type": "divider",
+                    "text": "Doručený dokument"
+                  },
+                  {
+                    "id": "ms_dw4vaeuvoy",
+                    "type": "message",
+                    "from": "pa_e9l82ahvoy",
+                    "to": "pa_e9l82ahvoy",
+                    "text": "Rozhodne o jeho zaevidování/nezaevidování",
+                    "arrow": "sync",
+                    "color": ""
+                  },
+                  {
+                    "id": "ms_0jtu1x8voy",
+                    "type": "message",
+                    "from": "pa_e9l82ahvoy",
+                    "to": "pa_e9l82ahvoy",
+                    "text": "Zaeviduje dokument v modulu Podatelna",
+                    "arrow": "sync",
+                    "color": ""
+                  },
+                  {
+                    "id": "ms_gw13z96voy",
+                    "type": "message",
+                    "from": "pa_e9l82ahvoy",
+                    "to": "pa_wx4a2ssvoy",
+                    "text": "předá přes Evidenci k dalšímu vyřízení",
+                    "arrow": "sync",
+                    "color": ""
+                  },
+                  {
+                    "id": "ms_so593abvoy",
+                    "type": "message",
+                    "from": "pa_wx4a2ssvoy",
+                    "to": "pa_wx4a2ssvoy",
+                    "text": "vyřizuje se, předává se",
+                    "arrow": "sync",
+                    "color": ""
+                  },
+                  {
+                    "id": "ms_ceog0gpvoy",
+                    "type": "message",
+                    "from": "pa_wx4a2ssvoy",
+                    "to": "pa_wx4a2ssvoy",
+                    "text": "Dokument je vyřízen (nebo i spis uzavřen)",
+                    "arrow": "sync",
+                    "color": ""
+                  },
+                  {
+                    "id": "ms_xe8j89hvoy",
+                    "type": "message",
+                    "from": "pa_wx4a2ssvoy",
+                    "to": "pa_q4qg2x2voy",
+                    "text": "Vyřízené dokumenty se ukládají do spisovny",
+                    "arrow": "sync",
+                    "color": ""
+                  },
+                  {
+                    "id": "ms_18i8u5evoy",
+                    "type": "message",
+                    "from": "pa_q4qg2x2voy",
+                    "to": "pa_q4qg2x2voy",
+                    "text": "Po dobu skartační lhůty jsou ve Spisovně",
+                    "arrow": "sync",
+                    "color": ""
+                  },
+                  {
+                    "id": "ms_jt4f50ovoy",
+                    "type": "message",
+                    "from": "pa_q4qg2x2voy",
+                    "to": "pa_zi7gridvoy",
+                    "text": "Po skartační lhůtě se zařadí do skartačního řízení",
+                    "arrow": "sync",
+                    "color": ""
+                  },
+                  {
+                    "id": "ms_v28ftl0voy",
+                    "type": "message",
+                    "from": "pa_zi7gridvoy",
+                    "to": "pa_zi7gridvoy",
+                    "text": "Provede se skartační řízení a vyřazení",
+                    "arrow": "sync",
+                    "color": ""
+                  },
+                  {
+                    "id": "dv_1tf6ra1voy",
+                    "type": "divider",
+                    "text": "Vlastní dokument"
+                  },
+                  {
+                    "id": "ms_tvj76svvoy",
+                    "type": "message",
+                    "from": "pa_wx4a2ssvoy",
+                    "to": "pa_wx4a2ssvoy",
+                    "text": "Založí se nový vlastní dokument",
+                    "arrow": "sync",
+                    "color": ""
+                  },
+                  {
+                    "id": "ms_oaszidsvoy",
+                    "type": "message",
+                    "from": "pa_wx4a2ssvoy",
+                    "to": "pa_wx4a2ssvoy",
+                    "text": "Dokument se připravuje",
+                    "arrow": "sync",
+                    "color": ""
+                  },
+                  {
+                    "id": "ms_loaniu9voy",
+                    "type": "message",
+                    "from": "pa_wx4a2ssvoy",
+                    "to": "pa_wx4a2ssvoy",
+                    "text": "Finalizace a převod do výstupního formátu",
+                    "arrow": "sync",
+                    "color": ""
+                  },
+                  {
+                    "id": "ms_c76rv0lvoy",
+                    "type": "message",
+                    "from": "pa_wx4a2ssvoy",
+                    "to": "pa_wx4a2ssvoy",
+                    "text": "Opatří se kvalifikovanými validačními prvky",
+                    "arrow": "sync",
+                    "color": ""
+                  },
+                  {
+                    "id": "ms_dux8jwpvoy",
+                    "type": "message",
+                    "from": "pa_wx4a2ssvoy",
+                    "to": "pa_wx4a2ssvoy",
+                    "text": "Dokument je vyřízen (nebo i spis uzavřen)",
+                    "arrow": "sync",
+                    "color": ""
+                  },
+                  {
+                    "id": "ms_czp6d7avoy",
+                    "type": "message",
+                    "from": "pa_wx4a2ssvoy",
+                    "to": "pa_q4qg2x2voy",
+                    "text": "Vyřízené dokumenty se ukládají do spisovny",
+                    "arrow": "sync",
+                    "color": ""
+                  },
+                  {
+                    "id": "ms_5s00ggwvoy",
+                    "type": "message",
+                    "from": "pa_q4qg2x2voy",
+                    "to": "pa_q4qg2x2voy",
+                    "text": "Po dobu skartační lhůty jsou ve Spisovně",
+                    "arrow": "sync",
+                    "color": ""
+                  },
+                  {
+                    "id": "ms_bnu0j7vvoy",
+                    "type": "message",
+                    "from": "pa_q4qg2x2voy",
+                    "to": "pa_zi7gridvoy",
+                    "text": "Po skartační lhůtě se zařadí do skartačního řízení",
+                    "arrow": "sync",
+                    "color": ""
+                  },
+                  {
+                    "id": "ms_3yu0orrvoy",
+                    "type": "message",
+                    "from": "pa_zi7gridvoy",
+                    "to": "pa_zi7gridvoy",
+                    "text": "Provede se skartační řízení a vyřazení",
+                    "arrow": "sync",
+                    "color": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "done": {},
+      "versions": []
     }
   ],
   "sharedElements": [
