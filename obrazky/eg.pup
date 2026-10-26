@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "projectName": "EG",
   "created": "2026-06-02T14:49:12.239Z",
-  "modified": "2026-09-18T13:13:55.556Z",
+  "modified": "2026-10-26T20:49:57.523Z",
   "settings": {
     "theme": "",
     "skinparam": "",
@@ -8043,6 +8043,245 @@
         "cl_394njw2oy5": true,
         "cl_yea9ggugfa": true
       }
+    },
+    {
+      "id": "dg_40j43agi23",
+      "name": "Fáze cyklu a procesů spisové služby",
+      "type": "usecase",
+      "folderId": null,
+      "created": "2026-10-26T20:47:10.251Z",
+      "modified": "2026-10-26T20:49:57.523Z",
+      "settings": {
+        "theme": "",
+        "skinparam": "",
+        "header": "",
+        "footer": "",
+        "title": "",
+        "caption": "",
+        "layoutDirection": "top-bottom"
+      },
+      "model": {
+        "actors": [],
+        "useCases": [
+          {
+            "id": "uc_zjtqyikpyp",
+            "name": "Příjem dokumentů",
+            "alias": "procesprijemdokumentu",
+            "description": "",
+            "systemId": null
+          },
+          {
+            "id": "uc_bplyserpyp",
+            "name": "Evidování dokumentů",
+            "alias": "procesevidovanidokumentu",
+            "description": "",
+            "systemId": null
+          },
+          {
+            "id": "uc_c719fz1pyp",
+            "name": "Označování dokumentů",
+            "alias": "procesonacovanidokumentu",
+            "description": "",
+            "systemId": null
+          },
+          {
+            "id": "uc_pzf3rrzpyp",
+            "name": "Rozdělování dokumentů",
+            "alias": "procesrozdelovanidokumentu",
+            "description": "",
+            "systemId": null
+          },
+          {
+            "id": "uc_uo5li12pyp",
+            "name": "Zařazování dokumentů",
+            "alias": "proceszarazovanidokumentu",
+            "description": "",
+            "systemId": null
+          },
+          {
+            "id": "uc_c9th14wpyq",
+            "name": "Oběh dokumentů",
+            "alias": "procesobehdokumentu",
+            "description": "",
+            "systemId": null
+          },
+          {
+            "id": "uc_4bblj3apyq",
+            "name": "Vyřizování dokumentů",
+            "alias": "procesvyrizovanidokumentu",
+            "description": "",
+            "systemId": null
+          },
+          {
+            "id": "uc_puatr4npyq",
+            "name": "Vyhotovování dokumentů",
+            "alias": "procesvyhotovovanidokumentu",
+            "description": "",
+            "systemId": null
+          },
+          {
+            "id": "uc_216ycbypyq",
+            "name": "Podepisování dokumentů a užívání razítek",
+            "alias": "procespodepisovanidokumentu",
+            "description": "",
+            "systemId": null
+          },
+          {
+            "id": "uc_wx9noljpyq",
+            "name": "Odesílání dokumentů",
+            "alias": "procesodesilanidokumentu",
+            "description": "",
+            "systemId": null
+          },
+          {
+            "id": "uc_y54475ipyq",
+            "name": "Ukládání dokumentů",
+            "alias": "procesukladanidokumentu",
+            "description": "",
+            "systemId": null
+          },
+          {
+            "id": "uc_8ygfygxpyq",
+            "name": "Vyřazování dokumentů",
+            "alias": "procesvyrazovanidokumentu",
+            "description": "",
+            "systemId": null
+          },
+          {
+            "id": "uc_glslwy6pyq",
+            "name": "Skartační řízení",
+            "alias": "processkartacnirizeni",
+            "description": "",
+            "systemId": null
+          }
+        ],
+        "systems": [],
+        "relationships": [
+          {
+            "id": "rl_ckocnzgpyq",
+            "sourceId": "uc_zjtqyikpyp",
+            "sourceType": "usecase",
+            "targetId": "uc_bplyserpyp",
+            "targetType": "usecase",
+            "type": "association",
+            "label": "<<následuje>>",
+            "color": ""
+          },
+          {
+            "id": "rl_fvitvwapyq",
+            "sourceId": "uc_bplyserpyp",
+            "sourceType": "usecase",
+            "targetId": "uc_c719fz1pyp",
+            "targetType": "usecase",
+            "type": "association",
+            "label": "<<následuje>>",
+            "color": ""
+          },
+          {
+            "id": "rl_l2gl4yxpyq",
+            "sourceId": "uc_c719fz1pyp",
+            "sourceType": "usecase",
+            "targetId": "uc_pzf3rrzpyp",
+            "targetType": "usecase",
+            "type": "association",
+            "label": "<<následuje>>",
+            "color": ""
+          },
+          {
+            "id": "rl_rt4wvd1pyq",
+            "sourceId": "uc_pzf3rrzpyp",
+            "sourceType": "usecase",
+            "targetId": "uc_c9th14wpyq",
+            "targetType": "usecase",
+            "type": "association",
+            "label": "<<následuje>>",
+            "color": ""
+          },
+          {
+            "id": "rl_b4pqghlpyq",
+            "sourceId": "uc_c9th14wpyq",
+            "sourceType": "usecase",
+            "targetId": "uc_uo5li12pyp",
+            "targetType": "usecase",
+            "type": "association",
+            "label": "<<následuje>>",
+            "color": ""
+          },
+          {
+            "id": "rl_htyj2bapyq",
+            "sourceId": "uc_c9th14wpyq",
+            "sourceType": "usecase",
+            "targetId": "uc_4bblj3apyq",
+            "targetType": "usecase",
+            "type": "association",
+            "label": "<<následuje>>",
+            "color": ""
+          },
+          {
+            "id": "rl_kvmuzrwpyq",
+            "sourceId": "uc_4bblj3apyq",
+            "sourceType": "usecase",
+            "targetId": "uc_y54475ipyq",
+            "targetType": "usecase",
+            "type": "association",
+            "label": "<<následuje>>",
+            "color": ""
+          },
+          {
+            "id": "rl_lxaq41cpyq",
+            "sourceId": "uc_puatr4npyq",
+            "sourceType": "usecase",
+            "targetId": "uc_216ycbypyq",
+            "targetType": "usecase",
+            "type": "association",
+            "label": "<<následuje>>",
+            "color": ""
+          },
+          {
+            "id": "rl_l1nj70spyq",
+            "sourceId": "uc_216ycbypyq",
+            "sourceType": "usecase",
+            "targetId": "uc_wx9noljpyq",
+            "targetType": "usecase",
+            "type": "association",
+            "label": "<<následuje>>",
+            "color": ""
+          },
+          {
+            "id": "rl_3eaoxw0pyq",
+            "sourceId": "uc_wx9noljpyq",
+            "sourceType": "usecase",
+            "targetId": "uc_4bblj3apyq",
+            "targetType": "usecase",
+            "type": "association",
+            "label": "<<následuje>>",
+            "color": ""
+          },
+          {
+            "id": "rl_741tv31pyq",
+            "sourceId": "uc_y54475ipyq",
+            "sourceType": "usecase",
+            "targetId": "uc_8ygfygxpyq",
+            "targetType": "usecase",
+            "type": "association",
+            "label": "<<následuje>>",
+            "color": ""
+          },
+          {
+            "id": "rl_r0pen0hpyq",
+            "sourceId": "uc_8ygfygxpyq",
+            "sourceType": "usecase",
+            "targetId": "uc_glslwy6pyq",
+            "targetType": "usecase",
+            "type": "association",
+            "label": "<<následuje>>",
+            "color": ""
+          }
+        ]
+      },
+      "done": {},
+      "versions": [],
+      "status": "done"
     }
   ],
   "sharedElements": [
