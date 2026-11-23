@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "projectName": "Ukázky a výuka PlantUML a editoru",
+  "created": "2026-11-23T17:37:30.784Z",
+  "modified": "2026-11-23T18:07:23.889Z",
+  "settings": {
+    "theme": "",
+    "skinparam": "",
+    "header": "",
+    "footer": "Tohle je pro edukační účely k PlantUML editoru.",
+    "title": "",
+    "caption": ""
+  },
+  "folders": [],
+  "diagrams": [
+    {
+      "id": "dg_3g6y3u0wlb",
+      "name": "Ukázka class diagramu",
+      "type": "class",
+      "folderId": null,
+      "created": "2026-11-23T17:47:11.807Z",
+      "modified": "2026-11-23T17:57:31.923Z",
+      "settings": {
+        "theme": "",
+        "skinparam": "",
+        "header": "",
+        "footer": "",
+        "title": "Jen ukázkový diagram",
+        "caption": "Tady je jen ukázka práce v PlantUML editoru.",
+        "layoutDirection": "",
+        "hideEmptyMembers": false,
+        "hideEmptyAttributes": false,
+        "hideEmptyMethods": false,
+        "hideCircle": false,
+        "hideStereotype": false
+      },
+      "model": {
+        "classes": [
+          {
+            "id": "cl_d593tjq1rx",
+            "alias": "Prvnitrida",
+            "stereotypeExtra": "",
+            "packageId": "pk_0qc0na13k2",
+            "sharedRef": "Prvnitrida"
+          },
+          {
+            "id": "cl_6zpy48xau6",
+            "name": "Druhá třída",
+            "alias": "Druhatrida",
+            "stereotype": "class",
+            "stereotypeExtra": "",
+            "attributes": [],
+            "methods": [],
+            "values": [],
+            "packageId": null
+          }
+        ],
+        "relationships": [
+          {
+            "id": "rel_tfj00ymnxt",
+            "sourceClassId": "cl_d593tjq1rx",
+            "targetClassId": "cl_6zpy48xau6",
+            "type": "association",
+            "sourceCardinality": "1",
+            "targetCardinality": "1",
+            "label": "popisek",
+            "direction": "forward"
+          }
+        ],
+        "packages": [
+          {
+            "id": "pk_0qc0na13k2",
+            "name": "Balíček",
+            "alias": "Balicek",
+            "packageType": "folder",
+            "parentId": null
+          }
+        ],
+        "notes": []
+      },
+      "done": {},
+      "versions": [],
+      "status": "draft"
+    },
+    {
+      "id": "dg_z1fsqum8le",
+      "name": "Ukázka sdílených prvků",
+      "type": "class",
+      "folderId": null,
+      "created": "2026-11-23T18:03:00.482Z",
+      "modified": "2026-11-23T18:07:23.889Z",
+      "settings": {
+        "theme": "",
+        "skinparam": "",
+        "header": "",
+        "footer": "",
+        "title": ""
+      },
+      "model": {
+        "classes": [
+          {
+            "id": "cl_pg6xedbwpm",
+            "name": "Co je?",
+            "alias": "Coje",
+            "stereotype": "class",
+            "stereotypeExtra": "",
+            "attributes": [],
+            "methods": [],
+            "values": [],
+            "packageId": null
+          },
+          {
+            "id": "c_1827w9vn69",
+            "sharedRef": "Prvnitrida",
+            "packageId": null,
+            "color": "Yellow"
+          }
+        ],
+        "relationships": [],
+        "packages": [],
+        "notes": []
+      },
+      "done": {},
+      "versions": [
+        {
+          "id": "vr_g9nsnjbvu8",
+          "label": "verze 1 rozdělaná",
+          "timestamp": "2026-11-23T18:07:23.888Z",
+          "snapshot": {
+            "model": {
+              "classes": [
+                {
+                  "id": "cl_pg6xedbwpm",
+                  "name": "Co je?",
+                  "alias": "Coje",
+                  "stereotype": "class",
+                  "stereotypeExtra": "",
+                  "attributes": [],
+                  "methods": [],
+                  "values": [],
+                  "packageId": null
+                },
+                {
+                  "id": "c_1827w9vn69",
+                  "sharedRef": "Prvnitrida",
+                  "packageId": null,
+                  "color": "Yellow"
+                }
+              ],
+              "relationships": [],
+              "packages": [],
+              "notes": []
+            },
+            "settings": {
+              "theme": "",
+              "skinparam": "",
+              "header": "",
+              "footer": "",
+              "title": ""
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sharedElements": [
+    {
+      "name": "První sdílená třída",
+      "stereotype": "class",
+      "attributes": [
+        {
+          "id": "at_6mv9olytut",
+          "visibility": "+",
+          "name": "atribut 1",
+          "type": "",
+          "defaultValue": "",
+          "isStatic": false,
+          "isAbstract": false
+        }
+      ],
+      "methods": [],
+      "values": [],
+      "alias": "Prvnitrida",
+      "kind": "class",
+      "note": "Tohle je jen pro ukázku"
+    }
+  ],
+  "ghPath": "egdilna/wiki/ukazka.pup"
+}
